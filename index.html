@@ -41,47 +41,44 @@
   <main>
     <!-- Intro Section: Text + Main Image -->
     <section id="intro" class="border-t border-neutral-200 bg-white">
-      <div class="mx-auto max-w-6xl px-4 py-12 grid md:grid-cols-2 gap-10 items-center">
-        <!-- Left: Text -->
-        <div>
-          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-neutral-900">
-           Live well.<br>
-           Spend less.<br>
-           Stay independent.
+      <div class="mx-auto max-w-6xl px-4 py-12 flex flex-col md:flex-row gap-12 items-start">
+  
+  <!-- Left: Text -->
+  <div class="flex-1 max-w-xl">
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-neutral-900">
+      Live well.<br>
+      Spend less.<br>
+      Stay independent.
     </h1>
 
+    <div class="mt-5 space-y-4 text-neutral-700">
+      <p>Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price,
+      shared facilities, and transparent weekly costs in a neighbourhood that feels like home.</p>
 
-          <div class="mt-5 space-y-4 text-neutral-700">
-            <p>
-              Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price,
-              shared facilities, and transparent weekly costs in a neighbourhood that feels like home.
-            </p>
-            <p>
-              Because retirement living in New Zealand has lost its balance — too expensive, too restrictive,
-              and too late in life.
-            </p>
-            <p>
-              Club 55 was founded to offer something better: freehold homes at a fair price, transparent weekly
-              costs, and a community designed for active people in their 50s and 60s.
-            </p>
-            <p>
-              And because scale matters, Club 55 is built as a true community — 2,000–3,000 homes, not a small
-              village — which allows better amenities, lower costs, and a neighbourhood that stands on its own.
-            </p>
-          </div>
-        </div>
+      <p>Because retirement living in New Zealand has lost its balance — too expensive, too restrictive,
+      and too late in life.</p>
 
-        <!-- Right: Main Image (squarish) -->
-        <div class="overflow-hidden rounded-2xl shadow-md">
-          <!-- Replace hero-hike.jpg with your actual filename -->
-          <img src="./hero-hike.jpg"
-               alt="Active couple hiking in the hills"
-               class="w-full h-80 md:h-[380px] object-cover" />
-        </div>
-      </div>
+      <p>Club 55 was founded to offer something better: freehold homes at a fair price, transparent weekly
+      costs, and a community designed for active people in their 50s and 60s.</p>
+
+      <p>And because scale matters, Club 55 is built as a true community — 2,000–3,000 homes, not a small village — 
+      which allows better amenities, lower costs, and a neighbourhood that stands on its own.</p>
+    </div>
+  </div>
+
+  <!-- Right: Image -->
+  <div class="flex-1 max-w-xl">
+    <div class="overflow-hidden rounded-2xl shadow-md h-full">
+      <img src="./hero-hike.jpg"
+           alt="Active couple hiking"
+           class="w-full h-full object-cover" />
+    </div>
+  </div>
+
+</div>
+
 
       <!-- Mood Image Grid -->
-      <!-- Mood Image Grid with proper spacing + square crops -->
 <div class="mx-auto max-w-6xl px-4 pt-16 pb-20">  <!-- increased top and bottom spacing -->
   <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-4">
     
