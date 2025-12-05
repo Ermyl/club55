@@ -54,22 +54,21 @@
 
 <!-- ================= HERO ================= -->
 <section id="intro" class="relative text-white">
-
   <!-- MOBILE IMAGE (portrait) -->
   <img
     src="./hero-portrait.jpg"
     alt="Active couple enjoying the landscape"
-    class="absolute inset-0 w-full h-full object-cover object-top md:hidden"
+    class="absolute inset-0 h-full w-full object-cover object-top md:hidden"
   />
 
   <!-- DESKTOP IMAGE (landscape) -->
   <img
     src="./hero-landscape.jpg"
     alt="Active couple enjoying the landscape"
-    class="absolute inset-0 w-full h-full object-cover hidden md:block"
+    class="absolute inset-0 h-full w-full object-cover hidden md:block"
   />
 
-  <!-- Dark overlay -->
+  <!-- Dark overlay for readability -->
   <div class="absolute inset-0 bg-black/40"></div>
 
   <!-- Header on top of image -->
@@ -84,8 +83,10 @@
       </a>
 
       <!-- CTA -->
-      <a href="mailto:info@i4c.co.nz"
-         class="rounded-full bg-emerald-500 px-3 py-1.5 text-xs md:text-sm md:px-4 md:py-2 text-white">
+      <a
+        href="mailto:info@i4c.co.nz"
+        class="rounded-full bg-emerald-500 px-3 py-1.5 text-xs font-semibold text-white hover:bg-emerald-600 md:text-sm md:px-4 md:py-2"
+      >
         Contact
       </a>
     </div>
@@ -94,32 +95,44 @@
   <!-- Hero copy -->
   <div class="relative z-10">
     <div class="mx-auto max-w-6xl px-4">
-
-      <!-- Updated spacing here -->
-      <div class="min-h-[90vh] md:min-h-[80vh] flex items-start pt-28 md:pt-40 pb-16">
+      <!-- Height + alignment:
+           - min-h gives a nice tall hero
+           - items-start + pt-24 puts text in the sky on mobile
+           - md:items-center recentres it nicely on desktop -->
+      <div class="min-h-[80vh] flex items-start md:items-center pt-24 md:pt-32 pb-16">
         <div class="max-w-2xl">
-          <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+          <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
             Live well. Spend less.
             <span class="text-emerald-400 block md:inline">Stay independent.</span>
           </h1>
 
           <div class="mt-4 space-y-4 text-white/90 text-base md:text-lg">
-            <p>Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price, shared facilities, and transparent weekly costs in a neighbourhood that feels like home.</p>
+            <p>
+              Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price,
+              shared facilities, and transparent weekly costs in a neighbourhood that feels like home.
+            </p>
 
-            <p>Because retirement living in New Zealand has lost its balance — too expensive, too restrictive, and too late in life.</p>
+            <p>
+              Because retirement living in New Zealand has lost its balance — too expensive, too restrictive,
+              and too late in life.
+            </p>
 
-            <p>Club 55 was founded to offer something better: freehold homes at a fair price, transparent weekly costs, and a community designed for active people in their 50s and 60s.</p>
+            <p>
+              Club 55 was founded to offer something better: freehold homes at a fair price, transparent weekly
+              costs, and a community designed for active people in their 50s and 60s.
+            </p>
 
-            <p>And because scale matters, Club 55 is built as a true community — 2,000–3,000 homes, not a small village — which allows better amenities, lower costs, and a neighbourhood that stands on its own.</p>
+            <p>
+              And because scale matters, Club 55 is built as a true community — 2,000–3,000 homes, not a small village —
+              which allows better amenities, lower costs, and a neighbourhood that stands on its own.
+            </p>
           </div>
-
         </div>
       </div>
-
     </div>
   </div>
-
 </section>
+
 
 
 
