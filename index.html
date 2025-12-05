@@ -16,49 +16,43 @@
 </head>
 <body class="bg-white text-neutral-900">
 
+  <!-- Password Gate -->
+<div id="password-screen" style="
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-family: Aptos, Segoe UI, sans-serif;
+  z-index: 9999;
+">
+  <h2 style="font-size: 20px; font-weight: 600;">Enter Password</h2>
+  <input id="pw-input" type="password" placeholder="Password"
+         style="padding: 10px 14px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px;">
+  <button onclick="checkPW()"
+          style="padding: 10px 16px; background: #0ea5e9; color: white; border-radius: 8px; cursor: pointer;">
+    Enter
+  </button>
+  <div id="pw-error" style="color: red; font-size: 14px; display: none;">Incorrect password</div>
+</div>
+
+<script>
+  function checkPW() {
+    const correct = "club552025"; // <<< CHANGE PASSWORD HERE
+    const entered = document.getElementById("pw-input").value;
+    if (entered === correct) {
+      document.getElementById("password-screen").style.display = "none";
+    } else {
+      document.getElementById("pw-error").style.display = "block";
+    }
+  }
+</script>
 
 
 <!-- ================= HERO ================= -->
-<section id="intro" class="relative text-white">
-  <!-- MOBILE IMAGE (portrait) -->
-  <img
-    src="./hero-portrait.jpg"
-    alt="Active couple enjoying the landscape"
-    class="absolute inset-0 h-full w-full object-cover object-top md:hidden"
-  />
-
-  <!-- DESKTOP IMAGE (landscape) -->
-  <img
-    src="./hero-landscape.jpg"
-    alt="Active couple enjoying the landscape"
-    class="absolute inset-0 h-full w-full object-cover hidden md:block"
-  />
-
-  <!-- Dark overlay for readability -->
-  <div class="absolute inset-0 bg-black/40"></div>
-
-  <!-- Header on top of image -->
-  <header class="absolute inset-x-0 top-0 z-20">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-      <!-- Logo -->
-      <a href="#" class="flex items-center gap-2">
-        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-600 text-white font-semibold">
-          55
-        </span>
-        <span class="text-white text-lg font-semibold">Club 55</span>
-      </a>
-
-      <!-- CTA -->
-      <a
-        href="mailto:info@i4c.co.nz"
-        class="rounded-full bg-emerald-500 px-3 py-1.5 text-xs font-semibold text-white hover:bg-emerald-600 md:text-sm md:px-4 md:py-2"
-      >
-        Contact
-      </a>
-    </div>
-  </header>
-
- <!-- HERO -->
 <section id="intro" class="relative text-white">
 
   <!-- MOBILE IMAGE -->
@@ -78,10 +72,27 @@
   <!-- OVERLAY -->
   <div class="absolute inset-0 bg-black/40"></div>
 
+  <!-- HEADER -->
+  <header class="absolute inset-x-0 top-0 z-20">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <a href="#" class="flex items-center gap-2">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-600 text-white font-semibold">55</span>
+        <span class="text-white text-lg font-semibold">Club 55</span>
+      </a>
+
+      <a
+        href="mailto:info@i4c.co.nz"
+        class="rounded-full bg-emerald-500 px-3 py-1.5 text-xs font-semibold text-white hover:bg-emerald-600 md:text-sm md:px-4 md:py-2"
+      >
+        Contact
+      </a>
+    </div>
+  </header>
+
   <!-- CONTENT -->
   <div class="relative z-10">
 
-    <!-- MOBILE HEIGHT FIX -->
+    <!-- MOBILE -->
     <div class="md:hidden min-h-[180vh] px-4 pt-32 pb-16 flex items-start">
       <div class="max-w-xl">
         <h1 class="text-4xl font-extrabold leading-tight">
@@ -101,26 +112,19 @@
       </div>
     </div>
 
-    <!-- DESKTOP NORMAL -->
+    <!-- DESKTOP -->
     <div class="hidden md:flex min-h-[85vh] items-center px-4 pb-20">
       <div class="max-w-2xl">
         <h1 class="text-6xl font-extrabold leading-tight">
           Live well. Spend less.
           <span class="text-emerald-400 block">Stay independent.</span>
         </h1>
-
-        <div class="mt-4 space-y-4 text-white/90 text-lg">
-          <!-- same paragraphs -->
-        </div>
       </div>
     </div>
-  </div>
 
   </div>
+
 </section>
-
-
-
 
 
 
