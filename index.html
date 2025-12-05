@@ -54,12 +54,21 @@
 
 <!-- ================= HERO ================= -->
 <section id="intro" class="relative text-white">
-  <!-- Background image -->
+
+ <!-- MOBILE IMAGE (portrait) -->
   <img
-    src="./hero-bg.jpg"
+    src="./hero-portrait.jpg"
     alt="Active couple enjoying the landscape"
-    class="absolute inset-0 w-full h-full object-cover"
+    class="absolute inset-0 w-full h-full object-cover object-top md:hidden"
   />
+
+  <!-- DESKTOP IMAGE (landscape) -->
+  <img
+    src="./hero-landscape.jpg"
+    alt="Active couple enjoying the landscape"
+    class="absolute inset-0 w-full h-full object-cover hidden md:block"
+  />
+
 
   <!-- Dark overlay -->
   <div class="absolute inset-0 bg-black/40"></div>
