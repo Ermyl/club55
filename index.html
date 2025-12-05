@@ -52,69 +52,82 @@
 </script>
 
 
-  <!-- Header -->
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-neutral-200">
+  <!-- Header (now floats over hero) -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-neutral-200">
   <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-
     <!-- Logo block -->
     <a href="#" class="flex items-center gap-2">
-  <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-600 text-white font-semibold">
-    55
-  </span>
-  <span class="text-neutral-900 text-lg font-semibold">
-    Club 55
-  </span>
-</a>
-
+      <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-600 text-white font-semibold">
+        55
+      </span>
+      <span class="text-neutral-900 text-lg font-semibold">
+        Club 55
+      </span>
+    </a>
 
     <!-- Contact -->
     <a href="mailto:info@i4c.co.nz"
-      class="inline-flex items-center rounded-xl bg-emerald-600 text-white px-3 py-1.5 text-sm shadow-sm hover:bg-emerald-700">
+       class="inline-flex items-center rounded-xl bg-emerald-600 text-white px-3 py-1.5 text-sm shadow-sm hover:bg-emerald-700">
       Contact
     </a>
   </div>
 </header>
 
-  <main>
-    <!-- Intro Section: Text + Main Image -->
-    <section id="intro" class="border-t border-neutral-200 bg-white">
-      <div class="mx-auto max-w-6xl px-4 py-12 flex flex-col md:flex-row gap-12 items-start md:items-stretch">
-  
-  <!-- Left: Text -->
-  <div class="flex-1 max-w-xl">
-    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
-  <span class="text-neutral-900">Live well.</span><br>
-  <span class="text-neutral-900">Spend less.</span><br>
-  <span class="text-emerald-500">Stay independent.</span>
-</h1>
-
-
-    <div class="mt-5 space-y-4 text-neutral-700">
-      <p>Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price,
-      shared facilities, and transparent weekly costs in a neighbourhood that feels like home.</p>
-
-      <p>Because retirement living in New Zealand has lost its balance — too expensive, too restrictive,
-      and too late in life.</p>
-
-      <p>Club 55 was founded to offer something better: freehold homes at a fair price, transparent weekly
-      costs, and a community designed for active people in their 50s and 60s.</p>
-
-      <p>And because scale matters, Club 55 is built as a true community — 2,000–3,000 homes, not a small village — 
-      which allows better amenities, lower costs, and a neighbourhood that stands on its own.</p>
+<main>
+  <!-- HERO with background image -->
+  <section id="intro" class="relative border-t border-neutral-200 bg-black text-white">
+    <!-- Background image -->
+    <div class="absolute inset-0">
+      <img
+        src="./hero-bg.jpg"  <!-- 👈 point this to your new 2400x1600 image -->
+        alt="Active couple enjoying the landscape"
+        class="w-full h-full object-cover"
+      />
+      <!-- Dark gradient for readability -->
+      <div class="absolute inset-0 bg-black/40 md:bg-black/35"></div>
     </div>
-  </div>
 
-  <!-- Right: Image -->
-  <div class="flex-1 max-w-xl">
-    <div class="overflow-hidden rounded-2xl shadow-md h-full min-h-[360px]">
-      <img src="./hero-hike.jpg"
-           alt="Active couple hiking"
-           class="w-full h-full object-cover" />
+    <!-- Content -->
+    <div class="relative z-10">
+      <div class="mx-auto max-w-6xl px-4 py-16 md:py-20 flex flex-col md:flex-row items-start md:items-center">
+        <!-- Left: Text -->
+        <div class="flex-1 max-w-xl">
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+            <span class="block text-white">Live well.</span>
+            <span class="block text-white">Spend less.</span>
+            <span class="block text-emerald-400">Stay independent.</span>
+          </h1>
+
+          <div class="mt-6 space-y-4 text-sm md:text-base text-neutral-100/90">
+            <p>
+              Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price,
+              shared facilities, and transparent weekly costs in a neighbourhood that feels like home.
+            </p>
+
+            <p>
+              Because retirement living in New Zealand has lost its balance — too expensive, too restrictive,
+              and too late in life.
+            </p>
+
+            <p>
+              Club 55 was founded to offer something better: freehold homes at a fair price, transparent weekly
+              costs, and a community designed for active people in their 50s and 60s.
+            </p>
+
+            <p>
+              And because scale matters, Club 55 is built as a true community — 2,000–3,000 homes, not a small village —
+              which allows better amenities, lower costs, and a neighbourhood that stands on its own.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right side: empty on desktop to give breathing space -->
+        <div class="hidden md:block flex-1"></div>
+      </div>
     </div>
-  </div>
+  </section>
+</main>
 
-</div> <!-- end of two-column intro -->
-</section>  <!-- CLOSE INTRO SECTION -->
 
 
 
