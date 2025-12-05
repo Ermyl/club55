@@ -52,8 +52,8 @@
 </script>
 
 
-  <!-- Header – floating over hero, transparent -->
-<header class="fixed inset-x-0 top-0 z-50 bg-black/10 backdrop-blur-sm">
+<!-- Header – floating over hero, transparent -->
+<header class="sticky top-0 z-50 bg-transparent">
   <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
     <!-- Logo block -->
     <a href="#" class="flex items-center gap-2">
@@ -73,9 +73,12 @@
   </div>
 </header>
 
-<main class="pt-16 md:pt-20">
-  <!-- HERO with full-width background image -->
-  <section id="intro" class="relative w-full overflow-hidden bg-black text-white">
+<main>
+  <!-- FULL-BLEED HERO with background image -->
+  <section
+    id="intro"
+    class="relative left-1/2 right-1/2 -ml-[50vw] w-screen overflow-hidden bg-black text-white"
+  >
     <!-- Background image -->
     <div class="absolute inset-0">
       <img
@@ -89,7 +92,7 @@
 
     <!-- Content -->
     <div class="relative z-10">
-      <div class="mx-auto max-w-6xl px-4 py-16 md:py-20 flex flex-col md:flex-row items-start md:items-center">
+      <div class="mx-auto max-w-6xl px-4 pt-24 pb-16 md:pt-28 md:pb-20 flex flex-col md:flex-row items-start md:items-center">
         <!-- Left: Text -->
         <div class="flex-1 max-w-xl">
           <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
@@ -98,16 +101,44 @@
             <span class="block text-emerald-400">Stay independent.</span>
           </h1>
 
-          <div class="mt-6 space-y-4 text-sm md:text-base text-neut
+          <div class="mt-6 space-y-4 text-sm md:text-base text-neutral-100/90">
+            <p>
+              Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price,
+              shared facilities, and transparent weekly costs in a neighbourhood that feels like home.
+            </p>
+
+            <p>
+              Because retirement living in New Zealand has lost its balance — too expensive, too restrictive,
+              and too late in life.
+            </p>
+
+            <p>
+              Club 55 was founded to offer something better: freehold homes at a fair price, transparent weekly
+              costs, and a community designed for active people in their 50s and 60s.
+            </p>
+
+            <p>
+              And because scale matters, Club 55 is built as a true community — 2,000–3,000 homes, not a small village —
+              which allows better amenities, lower costs, and a neighbourhood that stands on its own.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right side: empty on desktop to give breathing space -->
+        <div class="hidden md:block flex-1"></div>
+      </div>
+    </div>
+  </section>
 
 
 
-      <!-- Mood Image Grid -->
-<section id="mood" class="border-t border-neutral-200 bg-neutral-50 py-12">
+ <!-- Mood Image Grid -->
+  <section id="mood" class="border-t border-neutral-200 bg-neutral-50 py-12">
   <div class="mx-auto max-w-6xl px-4">
 
     <!-- Force 2 columns on mobile, 4 on desktop -->
     <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+
 
       <!-- Mood 1 -->
       <div class="overflow-hidden rounded-xl shadow-sm">
