@@ -16,40 +16,6 @@
 </head>
 <body class="bg-white text-neutral-900">
 
-  <!-- Password Gate -->
-<div id="password-screen" style="
-  position: fixed;
-  inset: 0;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  font-family: Aptos, Segoe UI, sans-serif;
-  z-index: 9999;
-">
-  <h2 style="font-size: 20px; font-weight: 600;">Enter Password</h2>
-  <input id="pw-input" type="password" placeholder="Password"
-         style="padding: 10px 14px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px;">
-  <button onclick="checkPW()"
-          style="padding: 10px 16px; background: #0ea5e9; color: white; border-radius: 8px; cursor: pointer;">
-    Enter
-  </button>
-  <div id="pw-error" style="color: red; font-size: 14px; display: none;">Incorrect password</div>
-</div>
-
-<script>
-  function checkPW() {
-    const correct = "club552025"; // <<< CHANGE PASSWORD HERE
-    const entered = document.getElementById("pw-input").value;
-    if (entered === correct) {
-      document.getElementById("password-screen").style.display = "none";
-    } else {
-      document.getElementById("pw-error").style.display = "block";
-    }
-  }
-</script>
 
 
 <!-- ================= HERO ================= -->
@@ -112,27 +78,30 @@
       </div>
     </div>
 
-    <!-- DESKTOP -->
-<div class="hidden md:flex min-h-[85vh] items-center px-4 pb-20">
-  <div class="max-w-2xl">
-    <h1 class="text-6xl font-extrabold leading-tight">
-      Live well. Spend less.
-      <span class="text-emerald-400 block">Stay independent.</span>
-    </h1>
+        <!-- DESKTOP -->
+    <div class="hidden md:flex min-h-[85vh] items-center px-4 pb-20">
+      <div class="max-w-2xl">
+        <h1 class="text-6xl font-extrabold leading-tight">
+          Live well. Spend less.
+          <span class="text-emerald-400 block">Stay independent.</span>
+        </h1>
 
-    <div class="mt-4 space-y-4 text-white/90 text-lg">
-      <p>Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price, shared facilities, and transparent weekly costs in a neighbourhood that feels like home.</p>
+        <div class="mt-4 space-y-4 text-white/90 text-lg">
+          <p>Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price, shared facilities, and transparent weekly costs in a neighbourhood that feels like home.</p>
 
-      <p>Because retirement living in New Zealand has lost its balance — too expensive, too restrictive, and too late in life.</p>
+          <p>Because retirement living in New Zealand has lost its balance — too expensive, too restrictive, and too late in life.</p>
 
-      <p>Club 55 was founded to offer something better: freehold homes at a fair price, transparent weekly costs, and a community designed for active people in their 50s and 60s.</p>
+          <p>Club 55 was founded to offer something better: freehold homes at a fair price, transparent weekly costs, and a community designed for active people in their 50s and 60s.</p>
 
-      <p>And because scale matters, Club 55 is built as a true community — 2,000–3,000 homes, not a small village — which allows better amenities, lower costs, and a neighbourhood that stands on its own.</p>
+          <p>And because scale matters, Club 55 is built as a true community — 2,000–3,000 homes, not a small village — which allows better amenities, lower costs, and a neighbourhood that stands on its own.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-</section>
+  </div> 
+
+</section> 
+
 
 
   <!-- Mood Image Grid -->
